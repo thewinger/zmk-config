@@ -1,89 +1,307 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  default: [↹, Q, W, E, R, T, Y, U, I, O, P, ⌫, Ctrl, A, S, D, F, G, H, J, K, L, ;, '''', Shift, Z, X, C, V, B, N, M, ',', ., /, Esc, Gui, lower, ␣, ⏎, raise, Alt]
-  lower:
-  - ↹
+  qwerty:
+  - Sft+Alt+ Ctrl
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - Hyper+ M
+  - {t: ESCAPE, h: Ctrl}
+  - {t: A, h: LEFT SHIFT}
+  - {t: S, h: Ctrl}
+  - {t: D, h: LEFT ALT}
+  - {t: F, h: LEFT GUI}
+  - G
+  - H
+  - {t: J, h: RIGHT GUI}
+  - {t: K, h: RIGHT ALT}
+  - {t: L, h: Ctrl}
+  - {t: ;, h: RIGHT SHIFT}
+  - ''''
+  - Shift
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RIGHT SHIFT
+  - {t: ESCAPE, h: Meh+ LEFT GUI}
+  - {t: ␣, h: num}
+  - {t: ↹, h: num}
+  - {t: ENTER, h: symbols_layers}
+  - {t: BACKSPACE, h: symbols_layers}
+  - ⌦
+  GAME_QW:
+  - LEFT ALT
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: GAME_QW, h: toggle}
+  - {t: ESCAPE, h: Ctrl}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - {t: J, h: RIGHT GUI}
+  - {t: K, h: RIGHT ALT}
+  - {t: L, h: Ctrl}
+  - {t: ;, h: RIGHT SHIFT}
+  - ''''
+  - Shift
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RIGHT SHIFT
+  - LEFT GUI
+  - ␣
+  - {t: ↹, h: num}
+  - ENTER
+  - {t: BACKSPACE, h: symbols_layers}
+  - ⌦
+  num:
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
   - '4'
   - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
+  - UP ARROW
+  - '&as N7'
+  - '&as N8'
+  - '&as N9'
+  - '-'
+  - KP DIVIDE
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - Ctrl
+  - LEFT ALT
+  - LEFT GUI
+  - PAGE UP
+  - KP EQUAL
+  - '&as N4'
+  - '&as N5'
+  - '&as N6'
+  - +
+  - KP ASTERISK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Home
+  - End
+  - PAGE DOWN
+  - ↓
+  - '&as N1'
+  - '&as N2'
+  - '&as N3'
+  - ','
+  - .
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '0'
-  - ⌫
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
+  symbols_layers:
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '{'
+  - '}'
+  - '&dir_dquot'
+  - Sft+Alt+ ←
+  - Sft+Gui+ LEFT ARROW
+  - Sft+Gui+ →
+  - Sft+Alt+ →
+  - {t: ▽, type: trans}
+  - PLAY PAUSE
+  - {t: ▽, type: trans}
+  - \
+  - Alt+Sft+ 2
+  - (
+  - )
+  - '&dir_squot'
   - ←
   - ↓
   - ↑
   - →
+  - VOLUME DOWN
+  - VOLUME UP
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Shift
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui
-  - {type: held}
-  - ␣
-  - ⏎
-  - {t: ▽, type: trans}
-  - Alt
-  raise:
-  - ↹
-  - '!'
-  - '@'
-  - '#'
-  - $
   - '%'
-  - ^
-  - AMPS
-  - KP MULTIPLY
-  - (
-  - )
-  - ⌫
-  - Ctrl
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - {t: ▽, type: trans}
-  - '&mkp RCLK'
-  - '-'
-  - '='
+  - '&dir_tilde'
   - '['
   - ']'
-  - \
-  - '`'
-  - Shift
+  - '&dir_btck'
+  - {t: '&ntil', s: '&ntild_cap'}
+  - Sft+ ↓
+  - Sft+ ↑
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - Gui
-  - '&studio_unlock'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  system:
+  - Boot
+  - '&dongle_boot'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Sft+Gui+ 4
+  - {t: ▽, type: trans}
+  - Out USB
+  - Out BLE
+  - CAPSLOCK
+  - {t: ▽, type: trans}
+  - '&dongle_boot'
+  - Boot
+  - Reset
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Reset
+  - {t: qwerty, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: GAME_QW, h: toggle}
+  - {t: GAMING_LAYER, h: toggle}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  GAMING_LAYER:
+  - M
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Z
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - X
+  - LSHIFT
+  - A
+  - S
+  - D
+  - F
+  - B
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: GAMING_LAYER, h: toggle}
+  - Ctrl
   - ␣
-  - ⏎
-  - {t: '&studio_unlock', type: held}
-  - Alt
+  - ␣
+  - Alt+ ↹
+  - Esc
+  - RIGHT GUI
+combos:
+- p: [24, 35]
+  k: Caps Word
+- p: [27, 26]
+  k: Gui+ C
+- p: [28, 27]
+  k: Gui+ V
+- p: [25, 26]
+  k: Gui+ X
+- p: [1, 13]
+  k: '1'
+  l: [qwerty, num]
+- p: [2, 14]
+  k: '2'
+  l: [qwerty, num]
+- p: [3, 15]
+  k: '3'
+  l: [qwerty, num]
+- p: [4, 16]
+  k: '4'
+  l: [qwerty, num]
+- p: [5, 17]
+  k: '5'
+  l: [qwerty, num]
+- p: [6, 18]
+  k: '6'
+  l: [qwerty, num]
+- p: [7, 19]
+  k: '7'
+  l: [qwerty, num]
+- p: [8, 20]
+  k: '8'
+  l: [qwerty, num]
+- p: [9, 21]
+  k: '9'
+  l: [qwerty, num]
+- p: [10, 22]
+  k: '0'
+  l: [qwerty, num]
+- p: [30, 31]
+  k: ←
+- p: [31, 32]
+  k: ↓
+- p: [32, 33]
+  k: ↑
+- p: [33, 34]
+  k: →
