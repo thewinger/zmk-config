@@ -4,13 +4,14 @@
 
 <div align="center">
 
-  [<img align="center" alt="MC Technology | YouTube" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/youtube.png" />][youtube]
-  [<img align="center" alt="MC Technology17 | Facebook" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/facebook.png" />][facebook]
-  [<img align="center" alt="MC Technology17 | Reddit" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/reddit.png" />][reddit]
+[<img align="center" alt="MC Technology | YouTube" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/youtube.png" />][youtube]
+[<img align="center" alt="MC Technology17 | Facebook" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/facebook.png" />][facebook]
+[<img align="center" alt="MC Technology17 | Reddit" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/reddit.png" />][reddit]
 
 </div>
 <br>
 
+Test
 
 - [INTRO](#INTRO)
 - [QUICK START](#QUICK-START)
@@ -26,14 +27,13 @@
 - [INSPIRATIONS](#INSPIRATIONS)
 - [MY OTHER PROJECTS](#MY-OTHER-PROJECTS)
 
-----
+---
 
 If you already have your corne configured with this repository and want to make
 a modification to your keymap, you can do it with the online [ZMK-STUDIO](https://zmk.studio/).
 
 If you already have your corne configured with this repository and want to make
 a modification to your keymap, you can do it with the online [keymap-editor](https://nickcoutsos.github.io/keymap-editor/).
-
 
 # INTRO
 
@@ -44,13 +44,11 @@ a modification to your keymap, you can do it with the online [keymap-editor](htt
 
 > [!NOTE]
 >
->
 > FEEL FREE TO MODIFY THE CODE TO YOUR LIKING OR USE WHATEVER YOU NEED. I
 > DECIDED TO REVOKE MANY CHANGES AND RETURN TO THE BASE MAPPING, SO THAT
-> ADVANCED AND NON-ADVANCED  USERS CAN USE THIS REPOSITORY AS A BASE FOR THEIR
+> ADVANCED AND NON-ADVANCED USERS CAN USE THIS REPOSITORY AS A BASE FOR THEIR
 > CONFIGURATIONS. IF YOU HAVE ANY QUESTIONS, DON'T HESITATE TO ASK. IF YOU HAVE
 > ANY SUGGESTIONS, FEEL FREE TO SUGGEST.
-
 
 The objective of this repository is to serve as a base for configuring your
 Corne keyboard with the firmware [ZMK firmware] in a simple and fast way.
@@ -70,7 +68,7 @@ peripherals), **[nice_nano_v2]** (used as a dongle and as peripherals),
 **[seeeduino_xiao_ble]** (used only as a dongle).
 
 | Main Pros                                                                                       |
-|-------------------------------------------------------------------------------------------------|
+| ----------------------------------------------------------------------------------------------- |
 | mobility and flexibility                                                                        |
 | reduction of tension and fatigue (ergonomic and ortholinear)                                    |
 | improved productivity                                                                           |
@@ -89,37 +87,37 @@ peripherals), **[nice_nano_v2]** (used as a dongle and as peripherals),
 | combos                                                                                          |
 | up to 1 week of use without charger (with 100mah)                                               |
 | support [nice-view] screen and oled screen                                                      |
-| online editor for keymap. see               [keymap-editor]                                     |
+| online editor for keymap. see [keymap-editor]                                                   |
 | 100% open source                                                                                |
 | support for puchi-ble dongle, nice!nano v2, nice!nano v2 clones, seeeduino xiao ble and more... |
 | support with dongle with display 128x32, 128x64 and 128x128                                     |
 | and more...                                                                                     |
 
 # QUICK START
+
 > [!NOTE]
 >
 > 1. With this configuration you can use the corne keyboard practically
-> immediately, you just have to follow the following steps and that's it.
->
+>    immediately, you just have to follow the following steps and that's it.
 > 2. If you need precompiled files you can download them from the [firmware
 >    folder](./firmware)
->
 > 3. If you have any problems, you just have to flash the reset firmwares that
 >    are in the [firmware](./firmware) folder and that's it.
->
 > 4. Disable the builds you don't need in the file [build.yaml](./build.yaml),
 >    by default they are all activated.
 
-
 ### zmk-studio
+
 This repository includes the necessary configuration to use zmk-studio without
 the need to configure anything else. You just have to follow the steps below:
+
 - fork this repository y flash the firmware to the keyboard with the uf2 files (see as below en normal procedure)
 - connect the master (dongle or central) to the PC
 - Modify the keyboard mapping on the go with [ZMK Studio
   Web](https://zmk.studio/) and enjoy the changes!
 
 ### normal procedure
+
 1. Fork this repository (I appreciate if you follow me on [github] and [youtube])
 2. Modify the keyboard mapping with [keymap-editor]. If you want to read about
    the features of this editor you can do so here: [ZMK Studio Web](https://zmk.studio/) or [keymap-editor](https://github.com/nickcoutsos/keymap-editor).
@@ -143,12 +141,13 @@ the need to configure anything else. You just have to follow the steps below:
 8. Enjoy your new keyboard
 
 Here you can see the visual changes to the configuration:
+
 > [!NOTE]
 >
 > This .svg image is automatically generated every time a change is made with
 > the keymap editor. Github's workflows are responsible for building and
 > generating the .svg file. You just have to go to the
-> [keymap-drawer](./keymap-drawer)  folder and open the .svg file with your
+> [keymap-drawer](./keymap-drawer) folder and open the .svg file with your
 > preferred browser if you want to see the files. The keymap-drawer
 > configuration file is located in
 > [config](./config/config_keymap-drawer.yaml).
@@ -159,8 +158,8 @@ Here you can see the visual changes to the configuration:
 If you want to customize this image with shapes/colors/etc. You can see these references:
 [^1] [^2] [^3]
 
-
 # LOCAL INSTALLATION
+
 Before making any modifications, please see the [ZMK documentation]
 documentation.
 
@@ -174,7 +173,6 @@ the official ZMK master branch.
 - **smart-word** (PR [#1451](https://github.com/zmkfirmware/zmk/pull/1451))
 - **on-release-for-tap-preferred** - [tweak](https://github.com/celejewski/zmk/commit/d7a8482712d87963e59b74238667346221199293) by Andrzej
 - **zen-tweaks** - [display & battery improvements](https://github.com/caksoylar/zmk/tree/caksoylar/zen-v1%2Bv2) by Cem Aksoylar
-
 
 1. Clone _your fork_ of this repository.
 
@@ -246,13 +244,13 @@ To compile with make, just run the following command:
 >    installed on your computer to use this command.
 > 2. Check the [makefile](./makefile) file for build options.
 
-
 ```bash
 make codebase_urob # clones urob's zmk firmware and initializes it
 make corne_urob # compile all the *.uf2 of the corne and copy them to the firmware folder
 ```
 
 # DISPLAY
+
 1. ePAPER [nice-view]
    - the [nice-view] screen is compiled by default in this repository.
 2. OLED
@@ -263,11 +261,12 @@ make corne_urob # compile all the *.uf2 of the corne and copy them to the firmwa
 > [!IMPORTANT]
 >
 > 1. To modify the dongle's OLED screen you can modify the `.overlay` file as follows for its respective board:
-[corne_dongle_xiao.overlay](./config/boards/shields/corne/corne_dongle_xiao.overlay) and
-[corne_dongle_pro_micro.overlay](./config/boards/shields/corne/corne_dongle_pro_micro.overlay). There you can find as a comment examples for the 128x32, 128x64, 128x128 screens and [nice-view] for the dongle screen.
-> 3. For the 128x128 OLED screen model sh1107 there are no default drivers in Zephyr, so neither in ZMK, but you can add it yourself with this small tutorial (This tutorial is the same for the OLED screens mentioned above):
+>    [corne_dongle_xiao.overlay](./config/boards/shields/corne/corne_dongle_xiao.overlay) and
+>    [corne_dongle_pro_micro.overlay](./config/boards/shields/corne/corne_dongle_pro_micro.overlay). There you can find as a comment examples for the 128x32, 128x64, 128x128 screens and [nice-view] for the dongle screen.
+> 2. For the 128x128 OLED screen model sh1107 there are no default drivers in Zephyr, so neither in ZMK, but you can add it yourself with this small tutorial (This tutorial is the same for the OLED screens mentioned above):
 
 You just have to modify the following line:
+
 ```dts
 // replace the following lines for the 128x64 screen by default
 &pro_micro_i2c {
@@ -309,8 +308,8 @@ You just have to modify the following line:
 
 ```
 
-
 # RGB
+
 > [!WARNING]
 >
 > 1. If you use [nice-view] you cannot use rgb, since [nice-view] uses the same
@@ -325,11 +324,12 @@ Here is an example of what it looks like:
 [![rgb-demo](src/demo.GIF)](https://www.youtube.com/c/mctechnology17)
 
 # DONGLE
+
 > [!TIP]
 >
 > 1. You can connect the display to the dongle directly to the i2c port of the
-> handwired style dongle, or you can connect it to a usb-c port of the pcb
-> style dongle.
+>    handwired style dongle, or you can connect it to a usb-c port of the pcb
+>    style dongle.
 > 2. You can see the connections in the following diagram for [seeeduino_xiao_ble](./src/pinout-seeeduino_xiao_ble.png) and for the boards with [pro_micro](./src/pinout-pro_micro.png) connections as the [nice_nano_v2] and the [puchi_ble_v1].
 > 3. You can print a case for the dongle, you can see the designs below in the section [Dongle Designs](#Dongle-Designs).
 > 4. You can print a pcb for the dongle, you can see the designs in the section [Dongle Designs](#Dongle-Designs).
@@ -340,13 +340,15 @@ dongle:
 [![dongle-demo](src/dongle.jpg)](https://www.youtube.com/c/mctechnology17)
 
 Information about this image:
+
 - The photo shows a [seeeduino_xiao_ble] dongle with an OLED 128x128 sh1107 display connected to the handwired style i2c port. This dongle acts as master.
 - The left side acts as peripheral in this case, the board is a [puchi_ble_v1].
 - The right side acts as a peripheral in this case, the board is a [nice_nano_v2].
 - The photo shows a clone [nice_nano_v2] dongle with an OLED display connected to a traditional i2c port in a pcb style. This dongle is only for sample photo and is not connected to any device shown in the photo.
 
-Macro example to enter bootloader mode. On  your
+Macro example to enter bootloader mode. On your
 [corne.keymap](./config/corne.keymap) file you can add the following macro (Thanks @chadtrans for the tip!):
+
 > [!TIP]
 >
 > 1. You can program this macro with the online editor [keymap-editor]
@@ -378,6 +380,7 @@ MACRO(dongle_boot, &bootloader)
 ```
 
 # USEFUL TIPS
+
 > [!TIP]
 >
 > Below are some useful tips for using your corne keyboard with this
@@ -394,6 +397,7 @@ MACRO(dongle_boot, &bootloader)
 # RELATED PROJECTS
 
 I used this project as a reference to configure the dongles with OLED screen:
+
 - [cygnus](https://github.com/rain2813/zmk-cygnus-oled.git) by @rain2813
 - [zmk keyboard Macintosh dongle display](https://makerworld.com/en/models/403660) by @rain2813
 - [corne with dongle](https://github.com/tomgroenwoldt/zmk-config.git) by @tomgroenwoldt
@@ -416,6 +420,7 @@ In this animation you can see the actions of the modifier keys, such as
 control, shift, alt, windows/mac, etc.
 
 # DONGLE DESIGNS
+
 - [case1](https://github.com/englmaxi/zmk-dongle-display/raw/main/cases/case1.zip) by @englmaxi
 - [case2](https://github.com/englmaxi/zmk-dongle-display/raw/main/cases/case2.zip) by @englmaxi
 - [Cyberdeck](https://github.com/rafaelromao/keyboards/tree/main/stls/Dongle) by @rafaelromao
@@ -431,6 +436,7 @@ An example of Dongle Designs (by @rain2813):
 
 This repository includes the necessary configuration to use zmk-studio without
 the need to configure anything else. You just have to follow the steps below:
+
 - fork this repository y flash the firmware to the keyboard with the uf2 files
 - connect the master (dongle or central) to the PC
 - Modify the keyboard mapping on the go with [ZMK Studio
@@ -439,10 +445,10 @@ the need to configure anything else. You just have to follow the steps below:
 > [!TIP]
 >
 > 1. For zmk-studio it is necessary to enable the `&studio_unlock` macro but you
-> can skip this if you use `CONFIG_ZMK_STUDIO_LOCKING=n` in your zmk
-> configuration. This is enabled by default in this repository.
+>    can skip this if you use `CONFIG_ZMK_STUDIO_LOCKING=n` in your zmk
+>    configuration. This is enabled by default in this repository.
 > 2. Remember that this has to be activated on the master and the dongle:
-> `snippet: studio-rpc-usb-uart`
+>    `snippet: studio-rpc-usb-uart`
 > 3. with the `cmake-args: -DCONFIG_ZMK_USB=y` flag you can activate the master
 >    (dongle or central) to connect always defaults to usb.
 > 4. The zmk-studio only connects with USB on the web and only BLE in the app,
@@ -450,12 +456,13 @@ the need to configure anything else. You just have to follow the steps below:
 >    what I understood, if not, please correct me)
 
 Useful links:
+
 - [ZMK Studio Web](https://zmk.studio/)
 - [ZMK Studio Unlock Behavior](https://zmk.dev/docs/keymaps/behaviors/studio-unlock/)
 - [ZMK Studio Testing Steps / click hier for more ...](https://discord.com/channels/719497620560543766/719544534500900886/1296241576263024641):
-	* [Set up ZMK Studio](https://zmk.dev/docs/development/hardware-integration/studio-setup) for your device, if needed.
-	* [Build with ZMK Studio enabled](https://zmk.dev/docs/features/studio) and flash to the device.
-	* Test ZMK Studio by loading https://zmk.studio/ or installing the app from the latest release at https://github.com/zmkfirmware/zmk-studio/releases/
+  - [Set up ZMK Studio](https://zmk.dev/docs/development/hardware-integration/studio-setup) for your device, if needed.
+  - [Build with ZMK Studio enabled](https://zmk.dev/docs/features/studio) and flash to the device.
+  - Test ZMK Studio by loading https://zmk.studio/ or installing the app from the latest release at https://github.com/zmkfirmware/zmk-studio/releases/
 
 ### Reporting
 
@@ -467,13 +474,14 @@ bugs or testing results, please include all the relevant details, including the
 host OS, app/browser details, keyboard used, link to your config repo, etc.
 
 # MODULE INTEGRATION
+
 > [!TIP]
 >
 > 1. You can activate or deactivate the animation with: CONFIG_NICE_VIEW_GEM_ANIMATION=n
-> the animation is not activated by default in this repository for saving
-> battery. This is activated only in the peripheries and the corne master, not
-> in the dongles, because this module shows the status of the batteries in the
-> peripheries
+>    the animation is not activated by default in this repository for saving
+>    battery. This is activated only in the peripheries and the corne master, not
+>    in the dongles, because this module shows the status of the batteries in the
+>    peripheries
 
 See module details here for more information and more configurations: [nice-view-gem](https://github.com/M165437/nice-view-gem)
 
@@ -487,6 +495,7 @@ See module details here for more information and more configurations: [nice-view
 - [urob/zmk-config](https://github.com/urob/zmk-config)
 
 # MY OTHER PROJECTS:
+
 - [qmk-config] will be updated soon
 - [qmk_userspace] will be updated soon
 - [vimtools] swiss army knife for vim (features and settings that will make your life easier)
@@ -495,10 +504,12 @@ See module details here for more information and more configurations: [nice-view
 - [vim-executor] multilanguage code executor
 
 If you enjoy my contributions, feel free to donate. I appreciate if you follow me on [github] and [youtube]
+
 - [paypal]
 - [sponsor]
 
 # TODO
+
 - [ ] Add more features to the repository
 - [ ] Update the documentation
 
@@ -526,7 +537,6 @@ If you enjoy my contributions, feel free to donate. I appreciate if you follow m
 [ZMK keycodes]: https://zmk.dev/docs/codes
 [ZMK Discord]: https://zmk.dev/community/discord/invite
 [git]: (https://github.com/git-guides/install-git)
-
 [vim-executor]: https://github.com/mctechnology17/vim-executor
 [vim-better-header]: https://github.com/mctechnology17/vim-better-header
 [gm]: https://github.com/mctechnology17/gm
