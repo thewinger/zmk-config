@@ -116,7 +116,7 @@ int zmk_widget_peripheral_battery_status_init(
       lv_obj_align(image_canvas, LV_ALIGN_TOP_RIGHT, 0, 0);
       lv_obj_align(battery_label, LV_ALIGN_TOP_RIGHT, -7, 0);
     } else {
-      lv_label_set_text(index_label, "+%d", ZMK_SPLIT_BLE_PERIPHERAL_COUNT - 2);
+      lv_label_set_text_fmt(index_label, "+%d", ZMK_SPLIT_BLE_PERIPHERAL_COUNT);
     }
   }
 
