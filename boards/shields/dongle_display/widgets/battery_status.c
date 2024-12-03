@@ -104,6 +104,7 @@ int zmk_widget_peripheral_battery_status_init(
   for (int i = 0; i < ZMK_SPLIT_BLE_PERIPHERAL_COUNT; i++) {
     lv_obj_t *image_canvas = lv_canvas_create(widget->obj);
     lv_obj_t *battery_label = lv_label_create(widget->obj);
+    lv_obj_t *index_label = lv_label_create(widget->obj);
 
     lv_canvas_set_buffer(image_canvas, battery_image_buffer[i], 5, 8,
                          LV_IMG_CF_TRUE_COLOR);
@@ -111,14 +112,11 @@ int zmk_widget_peripheral_battery_status_init(
     if (i == 0) {
       lv_obj_align(image_canvas, LV_ALIGN_TOP_LEFT, 1, 0);
       lv_obj_align(battery_label, LV_ALIGN_TOP_LEFT, -1, 0);
-    } else if (i == ZMK_SPLIT_BLE_PERIPHERAL_COUNT - 1) {
+    } else if (i == 1) {
       lv_obj_align(image_canvas, LV_ALIGN_TOP_RIGHT, 0, 0);
       lv_obj_align(battery_label, LV_ALIGN_TOP_RIGHT, -7, 0);
     } else {
-      lv_obj_align(image_canvas, LV_ALIGN_TOP_RIGHT, -20, 0);
-      lv_obj_align(battery_label, LV_ALIGN_TOP_RIGHT, -27, 0);
-      lv_label_set_text_fmt(battery_label, "+%d",
-                            ZMK_SPLIT_BLE_PERIPHERAL_COUNT - 2);
+      lv_label_set_text(index_label, "+%d", ZMK_SPLIT_BLE_PERIPHERAL_COUNT - 2);
     }
   }
 
