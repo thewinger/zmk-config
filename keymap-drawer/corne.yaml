@@ -155,7 +155,7 @@ layers:
   - VOLUME DOWN
   - VOLUME UP
   - {t: ▽, type: trans}
-  - '%'
+  - AMPERSAND
   - '&dir_tilde'
   - '['
   - ']'
@@ -163,9 +163,9 @@ layers:
   - {t: '&ntil', s: '&ntild_cap'}
   - Sft+ ↓
   - Sft+ ↑
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $
+  - '%'
+  - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
