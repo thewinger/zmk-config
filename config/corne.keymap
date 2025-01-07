@@ -308,7 +308,7 @@
             bindings = <
 &trans  &kp EXCLAMATION  &kp AT                &kp LEFT_BRACE        &kp RIGHT_BRACE        &dir_dquot    &kp LS(LA(LEFT))  &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT))  &kp LS(LA(RIGHT))  &trans             &kp C_PLAY_PAUSE
 &trans  &kp BACKSLASH    &kp LA(LS(NUMBER_2))  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &dir_squot    &kp LEFT          &kp DOWN                &kp UP             &kp RIGHT          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-&trans  &kp AMPERSAND    &dir_tilde            &kp LBKT              &kp RBKT               &dir_btck     &ntild            &kp LS(DOWN)            &kp LS(UP)         &kp DOLLAR         &kp PERCENT        &kp ASTERISK
+&trans  &kp AMPERSAND    &dir_tilde            &kp LBKT              &kp RBKT               &dir_btck     &ntild            &kp LS(DOWN)            &kp LS(UP)         &trans             &trans             &trans
                                                &trans                &trans                 &trans        &trans            &trans                  &trans
             >;
 

@@ -163,9 +163,9 @@ layers:
   - {t: '&ntil', s: '&ntild_cap'}
   - Sft+↓
   - Sft+↑
-  - $
-  - '%'
-  - '*'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
