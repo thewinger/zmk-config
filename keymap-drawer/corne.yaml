@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   QWERTY:
-  - Sft+Alt+ Ctrl
+  - Sft+Alt+Ctrl
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - Hyper+ M
+  - Hyper+M
   - {t: ESCAPE, h: Ctrl}
   - {t: A, h: LEFT SHIFT}
   - {t: S, h: Ctrl}
@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - RIGHT SHIFT
-  - {t: ESCAPE, h: Meh+ LEFT GUI}
+  - {t: ESCAPE, h: Meh+LEFT GUI}
   - {t: ␣, h: NUM}
   - {t: ↹, h: NUM}
   - {t: ENTER, h: SYM}
@@ -88,11 +88,11 @@ layers:
   - ⌦
   NUM:
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - UP ARROW
   - '&as N7'
   - '&as N8'
@@ -100,9 +100,9 @@ layers:
   - '-'
   - KP DIVIDE
   - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - Ctrl
-  - LEFT ALT
+  - ^
+  - AMPERSAND
+  - '*'
   - LEFT GUI
   - PAGE UP
   - KP EQUAL
@@ -136,15 +136,15 @@ layers:
   - '{'
   - '}'
   - '&dir_dquot'
-  - Sft+Alt+ ←
-  - Sft+Gui+ LEFT ARROW
-  - Sft+Gui+ →
-  - Sft+Alt+ →
+  - Sft+Alt+←
+  - Sft+Gui+LEFT ARROW
+  - Sft+Gui+→
+  - Sft+Alt+→
   - {t: ▽, type: trans}
   - PLAY PAUSE
   - {t: ▽, type: trans}
   - \
-  - Alt+Sft+ 2
+  - Alt+Sft+2
   - (
   - )
   - '&dir_squot'
@@ -161,8 +161,8 @@ layers:
   - ']'
   - '&dir_btck'
   - {t: '&ntil', s: '&ntild_cap'}
-  - Sft+ ↓
-  - Sft+ ↑
+  - Sft+↓
+  - Sft+↑
   - $
   - '%'
   - '*'
@@ -177,7 +177,7 @@ layers:
   - '&dongle_boot'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Sft+Gui+ 4
+  - Ctl+Sft+Gui+4
   - {t: ▽, type: trans}
   - Out USB
   - Out BLE
@@ -255,18 +255,18 @@ layers:
   - Ctrl
   - ␣
   - ␣
-  - Alt+ ↹
+  - Alt+↹
   - Esc
   - RIGHT GUI
 combos:
 - p: [24, 35]
   k: Caps Word
 - p: [27, 26]
-  k: Gui+ C
+  k: Gui+C
 - p: [28, 27]
-  k: Gui+ V
+  k: Gui+V
 - p: [25, 26]
-  k: Gui+ X
+  k: Gui+X
 - p: [1, 13]
   k: '1'
   l: [QWERTY, NUM]
