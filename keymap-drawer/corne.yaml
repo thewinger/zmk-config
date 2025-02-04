@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - Hyper+M
+  - Meh+M
   - {t: ESCAPE, h: Ctrl}
   - {t: A, h: LEFT SHIFT}
   - {t: S, h: Ctrl}
