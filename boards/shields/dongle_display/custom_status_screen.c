@@ -22,6 +22,7 @@ static struct zmk_widget_peripheral_battery_status
     peripheral_battery_status_widget;
 static struct zmk_widget_modifiers modifiers_widget;
 static struct zmk_widget_bongo_cat bongo_cat_widget;
+static struct zmk_widget_wpm_init wpm_widget;
 static struct wpm_status_state wpm_widget;
 
 #if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
@@ -48,6 +49,32 @@ lv_obj_t *zmk_display_status_screen() {
   // zmk_widget_bongo_cat_init(&bongo_cat_widget, screen);
   // lv_obj_align(zmk_widget_bongo_cat_obj(&bongo_cat_widget), LV_ALIGN_CENTER,
   // 0, 0);
+  /**
+ * WPM status
+ **/
+
+static void set_wpm_status(struct zmk_widget_screen *widget, struct wpm_status_state state) {
+    for (int i = 0; i < 9; i++) {
+        widget->state.wpm[i] = widget->state.wpm[i + 1];
+    }
+    widget->state.wpm[9] = state.wpm;
+
+    draw_middle(widget->obj, widget->cbuf2, &widget->state);
+}
+
+static void wpm_status_update_cb(struct wpm_status_state state) {
+    struct zmk_widget_screen *widget;
+    SYS_SLIST_FOR_EACH_CONTAINER(&widgets, widget, node) { set_wpm_status(widget, state); }
+}
+
+struct wpm_status_state wpm_status_get_state(const zmk_event_t *eh) {
+    return (struct wpm_status_state){.wpm = zmk_wpm_get_state()};
+};
+
+ZMK_DISPLAY_WIDGET_LISTENER(widget_wpm_status, struct wpm_status_state, wpm_status_update_cb,
+                            wpm_status_get_state)
+ZMK_SUBSCRIPTION(widget_wpm_status, zmk_wpm_state_changed);
+
   zmk_widget_wpm_init(&wpm_widget, screen);
   lv_obj_align(zmk_widget_wpm_obj(&wpm_widget), LV_ALIGN_CENTER, 0, 0);
 
