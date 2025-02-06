@@ -22,8 +22,8 @@ static struct zmk_widget_peripheral_battery_status
     peripheral_battery_status_widget;
 static struct zmk_widget_modifiers modifiers_widget;
 static struct zmk_widget_bongo_cat bongo_cat_widget;
-static struct zmk_widget_wpm_init wpm_widget;
-static struct wpm_status_state wpm_widget;
+// static struct zmk_widget_wpm_init wpm_widget;
+// static struct wpm_status_state wpm_widget;
 
 #if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
 static struct zmk_widget_hid_indicators hid_indicators_widget;
